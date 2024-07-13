@@ -20,19 +20,19 @@
       <NavComponent></NavComponent>
     </div>
     <div class="ml-1 mt-16 flex items-center">
-      <SocialIcon to="https://github.com/luke-gibson">
+      <SocialIcon to="https://github.com/luke-gibson" aria-label="Luke Gibson GitHub">
         <IconsGitHub></IconsGitHub>
       </SocialIcon>
-      <SocialIcon to="https://www.behance.net/lukegibson1">
+      <SocialIcon to="https://www.behance.net/lukegibson1" aria-label="Luke Gibson Behance">
         <IconsBeHance></IconsBeHance>
       </SocialIcon>
-      <SocialIcon to="https://codepen.io/luke-gibson">
+      <SocialIcon to="https://codepen.io/luke-gibson" aria-label="Luke Gibson Codepen">
         <IconsCodePen></IconsCodePen>
       </SocialIcon>
-      <SocialIcon to="https://www.instagram.com/lukegibsondesign">
+      <SocialIcon to="https://www.instagram.com/lukegibsondesign" aria-label="Luke Gibson Instagram">
         <IconsInstagram></IconsInstagram>
       </SocialIcon>
-      <SocialIcon to="https://www.linkedin.com/in/lukegibson90/">
+      <SocialIcon to="https://www.linkedin.com/in/lukegibson90/" aria-label="Luke Gibson Linkedin">
         <IconsLinkedIn></IconsLinkedIn>
       </SocialIcon>
     </div>
