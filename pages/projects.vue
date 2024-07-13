@@ -26,7 +26,7 @@
               <h3>
                 <a
                   class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                  href="/"
+                  href="https://spectrumworkplace.co.uk/"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="..."
@@ -34,9 +34,9 @@
                     class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
                   ></span
                   ><span
-                    >Build a Spotify Connected
+                    >Spectrum Workplace
                     <span class="inline-block"
-                      >App<svg
+                      >Website<svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="currentColor"
@@ -51,9 +51,7 @@
                 ></a>
               </h3>
               <p class="mt-2 text-sm leading-normal">
-                Video course that teaches how to build a web app with the Spotify Web API.
-                Topics covered include the principles of REST APIs, user auth flows, Node,
-                Express, React, Styled Components, and more.
+                Spectrum contacted me looking for a web developer to either fix or replace their underperforming WordPress website. After careful consideration, we decided that replacing the existing system with a more flexible and user-friendly platform would be the best approach.. 
               </p>
             </div>
             <img
@@ -66,10 +64,10 @@
               class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
               style="color: transparent"
               srcset="
-                https://res.cloudinary.com/dqqarxqbu/image/upload/v1614295578/Luke%20Gibson%20Design/websitebackground_foxeah.jpg 1x,
-                https://res.cloudinary.com/dqqarxqbu/image/upload/v1614295578/Luke%20Gibson%20Design/websitebackground_foxeah.jpg 2x
+                https://res.cloudinary.com/dqqarxqbu/image/upload/v1645304762/Spectrum/spectrum_qrxpna.jpg 1x,
+                https://res.cloudinary.com/dqqarxqbu/image/upload/v1645304762/Spectrum/spectrum_qrxpna.jpg 2x
               "
-              src="https://res.cloudinary.com/dqqarxqbu/image/upload/v1614295578/Luke%20Gibson%20Design/websitebackground_foxeah.jpg"
+              src="https://res.cloudinary.com/dqqarxqbu/image/upload/v1645304762/Spectrum/spectrum_qrxpna.jpg.jpg"
             />
           </div>
         </li>

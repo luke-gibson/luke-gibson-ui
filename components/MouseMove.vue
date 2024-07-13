@@ -6,14 +6,11 @@ const { x, y } = useMouse();
 </script>
 
 <template>
-  <main class="min-h-screen w-screen relative overflow-hidden bg-slate-900">
+  <main class="min-h-screen w-screen relative bg-slate-900">
     <div
-      class="absolute bg-[#1D4ED8] rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl opacity-15"
+      class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
       :style="{
-        left: `${x}px`,
-        top: `${y}px`,
-        width: `500px`,
-        height: `500px`,
+        background: `radial-gradient(500px at ${x}px ${y}px, rgba(29, 78, 216, 0.2), transparent 80%)`
       }"
     ></div>
     <section
