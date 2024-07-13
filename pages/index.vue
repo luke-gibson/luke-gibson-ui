@@ -65,7 +65,7 @@ const skills = [
         Back in 2015, I was working as an Estate Agent when the agency I was with decided to rebrand. They needed a new logo, website, and email signatures. I’ve always been passionate about design, so I jumped at the chance to create the email signatures myself. After a bit of research, I opened Sublime Text and started writing HTML and CSS for the first time. I was hooked within hours.
       </p>
       <p class="mb-4">
-        Today, I focus on creating accessible user interfaces for various freelance projects and employers. I love working in that perfect sweet spot between design and development, creating websites that not only look great and are user-friendly but are also well-built and easy to maintain.
+        Today, I focus on creating accessible user interfaces for my employer and various freelance projects. I love working in that perfect sweet spot between design and development, creating websites that not only look great and are user-friendly but are also well-built and easy to maintain.
       </p>
       <p>
         When I’m not at my laptop, you’ll find me spending time with my wife, our two children, and our dog, Teddy. I’ve also recently embraced a healthier lifestyle, focusing on fitness and nutrition.
