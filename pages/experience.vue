@@ -15,6 +15,9 @@ const experiences = [
         name: "CSS/SCSS",
       },
       {
+        name: "BEMIT"
+      },
+      {
         name: "JavaScript ES6",
       },
       {
@@ -30,8 +33,14 @@ const experiences = [
         name: "Gulp/ Webpack"
       },
       {
-        name: "BEMIT"
+        name: "WCAG Accessibility"
       },
+      {
+        name: "Organic SEO"
+      },
+      {
+        name: "CMS architecture"
+      }
     ],
   },
   {
@@ -69,6 +78,9 @@ const experiences = [
       {
         name: "Blazor"
       },
+      {
+        name: "WCAG Accessibility"
+      },
     ],
   },
   {
@@ -89,6 +101,12 @@ const experiences = [
         name: "Razor"
       },
       {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
         name: "REST API"
       },
       {
@@ -96,12 +114,6 @@ const experiences = [
       },
       {
         name: "Entity Framework"
-      },
-      {
-        name: "HTML",
-      },
-      {
-        name: "CSS/SCSS",
       },
       {
         name: "JavaScript",
@@ -265,17 +277,13 @@ const experiences = [
       </ol>
       <div class="mt-12">
         <NuxtLink
-          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+          class="inline-flex items-baseline leading-tight hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
           to="~/public/LukeGibsonCV2024.pdf"
           target="_blank"
           rel="noreferrer noopener"
-          aria-label="View Full Résumé (opens in a new tab)"
-          ><span
-            >View Current
-            <!-- -->
-            <span class="inline-block"
-              >CV<IconsArrow></IconsArrow></span></span
-        ></NuxtLink>
+          aria-label="View Full Résumé (opens in a new tab)">
+          <span>View Current CV<IconsArrow></IconsArrow></span>
+        </NuxtLink>
       </div>
     </div>
   </section>

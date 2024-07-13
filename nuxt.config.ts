@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Luke Gibson Design | Web Designer and Developer Waterlooville, Hampshire',
+      title: 'Luke Gibson | Web Designer and Developer Waterlooville, Hampshire',
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },

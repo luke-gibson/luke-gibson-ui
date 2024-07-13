@@ -55,11 +55,11 @@ const skills = [
         About
       </h2>
     </div>
-    <div class="mb-10">
+    <!-- <div class="mb-10">
       <nuxt-img class="h-auto max-w-full rounded-lg shadow-xl shadow-slate-600/10" 
         src="https://res.cloudinary.com/dqqarxqbu/image/upload/v1720904320/LukeGibsonFamily_mumeod.jpg" alt="family portrait">
       </nuxt-img>
-    </div>
+    </div> -->
     <div>
       <p class="mb-4">
         Back in 2015, I was working as an Estate Agent when the agency I was with decided to rebrand. They needed a new logo, website, and email signatures. I’ve always been passionate about design, so I jumped at the chance to create the email signatures myself. After a bit of research, I opened Sublime Text and started writing HTML and CSS for the first time. I was hooked within hours.
