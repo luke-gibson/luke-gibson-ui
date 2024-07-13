@@ -14,7 +14,7 @@
         Front End Web Developer
       </h2>
       <p class="mt-4 max-w-xs leading-normal font-light text-slate-400">
-        I create pixel-perfect, dynamic, seo friendly, engaging and accessible
+        I create pixel-perfect, responsive, dynamic, seo friendly, engaging and accessible
         digital products.
       </p>
       <NavComponent></NavComponent>
