@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'cloudflare-pages'
   },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
