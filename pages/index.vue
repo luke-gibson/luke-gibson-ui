@@ -1,4 +1,52 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const skills = [
+  {
+    name: 'HTML5',
+  },
+  {
+    name: 'CSS/ SCSS',
+  },
+  {
+    name: 'JavaScript ES6',
+  },
+  {
+    name: 'Vue 3',
+  },
+  {
+    name: 'Nuxt 3',
+  },
+  {
+    name: 'Webpack/ Vite',
+  },
+  {
+    name: 'Umbraco CMS',
+  },
+  {
+    name: 'Optimizely CMS',
+  },
+  {
+    name: 'Razor',
+  },
+  {
+    name: 'MS SQL',
+  },
+  {
+    name: 'Tailwind/ Bootstrap',
+  },
+  {
+    name: 'WCAG Accessibility',
+  },
+  {
+    name: 'Agile/ Scrum Master',
+  },
+  {
+    name: 'UI/UX Design',
+  },
+  {
+    name: 'DevOps/ Jira',
+  },
+]
+</script>
 
 <template>
   <section
@@ -13,8 +61,10 @@
         About
       </h2>
     </div>
-    <div class="mb-6">
-      <nuxt-img class="h-auto max-w-full rounded-lg shadow-xl shadow-slate-600/10" src="https://res.cloudinary.com/dqqarxqbu/image/upload/v1720647399/Luke%20Gibson%20Design/Luke_Gibson_Family_d1qxzo.jpg" alt="image description"></nuxt-img>
+    <div class="mb-10">
+      <nuxt-img class="h-auto max-w-full rounded-lg shadow-xl shadow-slate-600/10" 
+        src="https://res.cloudinary.com/dqqarxqbu/image/upload/v1720904320/LukeGibsonFamily_mumeod.jpg" alt="family portrait">
+      </nuxt-img>
     </div>
     <div>
       <p class="mb-4">
@@ -27,5 +77,11 @@
         When I’m not at my laptop, you’ll find me spending time with my wife, our two children, and our dog, Teddy. I’ve also recently embraced a healthier lifestyle, focusing on fitness and nutrition.
       </p>
     </div>
+    <h3 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 mt-10 block">MY CORE SKLLSET</h3>            
+    <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">    
+      <BadgeComponent v-for="skill in skills">
+            {{ skill.name}}
+      </BadgeComponent> 
+    </ul>
   </section>
 </template>

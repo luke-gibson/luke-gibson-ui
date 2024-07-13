@@ -1,8 +1,245 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const experiences = [
+  {
+    title: "Front End Developer",
+    company: "Navico Group",
+    date: "2023 - PRESENT",
+    url: "https://www.navico.com/",
+    content:
+      "I collaborate closely with UI/UX designers on various projects. Together, we have developed a comprehensive component library for our B2C brands. After reviewing our legacy codebase, I recommended rewriting our websites and CMS platform using Optimizely CMS 12. I then built a platform allowing users to create multiple brand websites without development or production releases. I drive all technical decisions, coding standards, and architectural designs. My project enables global style updates in the CMS and selection of components from a large library, resulting in stylish, efficient websites with over 100% improved technical performance and WCAG level AA compliance. Following the successful launch of our first website, I empowered the Digital Marketing team to speed up website delivery by over 70%, while eliminating developer responsibilities for brand styling changes and releases.",
+    skills: [      
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "JavaScript ES6",
+      },
+      {
+        name: "Vue 3"
+      },
+      {
+        name: "Optimizely CMS"
+      },
+      {
+        name: "Figma"
+      },
+      {
+        name: "Gulp/ Webpack"
+      },
+      {
+        name: "BEMIT"
+      },
+    ],
+  },
+  {
+    title: "Software Developer ",
+    company: "Conduent",
+    date: "2020 - 2023",
+    url: "https://www.conduent.com/",
+    content:
+      "Working within a medium sized team of developers we collaboratively worked on a number of greenfield and existing projects. Most of my day to day activities include extending .Net Core Web API applications and working on a Blazor frontend. I also utilised my FrontEnd Experience to help create a SCSS/ JavaScript ES6 boilerplate for our Online Case Management applications to enable quick release websites for 30+ dierent councils ensuring WCAG 2.1 compliance to level AA. Whilst employed I obtained a Scrum Master Certificate, helping the team to follow Agile Methodologies.",
+    skills: [
+      {
+        name: ".Net"
+      },
+      {
+        name: "C#"
+      },
+      {
+        name: "Razor"
+      },
+      {
+        name: "REST API"
+      },
+      {
+        name: "SQL"
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "Blazor"
+      },
+    ],
+  },
+  {
+    title: "Junior Software Developer ",
+    company: "System1 Group",
+    date: "2019 - 2020",
+    url: "https://system1group.com/",
+    content:
+      "Becoming a Junior Software Developer was exactly the challenge I had been waiting for. I worked on a team of 4 developers, as a Junior I was supported by the Senior Developers and regularly use Linkedin Learning and training projects to improve my progression. My day to day role involved working on .Net Core Web & API applications using Entity Framework and the Mediator design patern. Using SQL Server Management Studio I read, create and modify database tables, views and stored procedures where required and within my skill set.",
+    skills: [
+      {
+        name: ".Net"
+      },
+      {
+        name: "C#"
+      },
+      {
+        name: "Razor"
+      },
+      {
+        name: "REST API"
+      },
+      {
+        name: "SQL"
+      },
+      {
+        name: "Entity Framework"
+      },
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "JavaScript",
+      }
+    ],
+  },
+  {
+    title: "Frontend Web Developer",
+    company: "FatFace",
+    date: "2018 - 2019",
+    url: "https://www.fatface.com/",
+    content:
+      "I was responsible for creating new templates and pages complying with a strict style guide, ensuring my code was delivered to a high standard. I had very close contact with designers ensuring digital design principles were followed and that accessibility standards, the users experience and a mobile first approach was applied.",
+    skills: [
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "Gulp",
+      },
+      {
+        name: "Adobe CC",
+      },
+      {
+        name: "Salesforce Commerce",
+      },
+      {
+        name: "Amplience CDN",
+      },
+      {
+        name: "BEMIT"
+      },
+    ],
+  },
+  {
+    title: "Frontend Web Developer",
+    company: "Markerstudy",
+    date: "2017 - 2018",
+    url: "https://www.markerstudy.com/",
+    content:
+      "After being made redundant in March I was invited back to join the new E-Commerce Team. Working on Pet Insurance websites and providing a white label solution for them to use as a base for all future projects.",
+    skills: [
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "jQuery",
+      },
+      {
+        name: ".Net",
+      },
+      {
+        name: "Razor",
+      },
+      {
+        name: "Umbraco CMS",
+      },
+      {
+        name: "Adobe CC",
+      },
+      {
+        name: "BEMIT"
+      },
+    ],
+  },
+  {
+    title: "Frontend Web Developer",
+    company: "TGDH",
+    date: "2017 - 2017",
+    url: "https://www.tgdh.co.uk",
+    content:
+      "I worked in a small team building websites using Umbraco. I worked closely with Designers and had regular contact with clients ensuring their requirements were met and provided personal training on Umbraco.",
+    skills: [
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "JavaScript",
+      },
+      {
+        name: "jQuery",
+      },
+      {
+        name: "Umbraco CMS",
+      },
+      {
+        name: "Grunt/Gulp",
+      },
+      {
+        name: "Adobe CC",
+      },
+      {
+        name: "BEMIT"
+      },
+    ],
+  },
+  {
+    title: "Junior Frontend Developer",
+    company: "Markerstudy",
+    date: "2015 - 2017",
+    url: "https://www.markerstudy.com/",
+    content:
+      "I was responsible for building and maintaining Front Ends for insurance websites, working closely with our teams .NET Developers and Project Managers delivering quote and buy websites to tight deadlines.",
+    skills: [
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS/SCSS",
+      },
+      {
+        name: "jQuery",
+      },
+      {
+        name: ".Net",
+      },
+    ],
+  },
+];
+</script>
 
 <template>
   <section
-    id="experience"
     class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
     aria-label="Work experience"
   >
@@ -15,178 +252,16 @@
     </div>
     <div>
       <ol class="group/list">
-        <li class="mb-12">
-          <div
-            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-          >
-            <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-            ></div>
-            <header
-              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-              aria-label="2024 to Present"
-            >
-              2017 — 2017
-            </header>
-            <div class="z-10 sm:col-span-6">
-              <h3 class="font-medium leading-snug text-slate-200">
-                <div>
-                  <a
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                    href="https://www.tgdh.co.uk"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="Junior Frontend Web Developer at Markerstudy (opens in a new tab)"
-                    ><span
-                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                    ></span
-                    ><span
-                      >Frontend Web Developer · <!-- -->
-                      <span class="inline-block"
-                        > TGDH<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                          aria-hidden="true"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                            clip-rule="evenodd"
-                          ></path></svg></span></span
-                  ></a>
-                </div>
-              </h3>
-              <p class="mt-2 text-sm leading-normal">
-                I worked in a small team building websites using Umbraco. I worked closely with Designers and had regular contact with clients ensuring their requirements were met and provided personal training on Umbraco.
-              </p>
-              <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    HTML
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    CSS/ SCSS
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    JavaScript
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    jQuery
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    Umbraco CMS
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    Adobe CC
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="mb-12">
-          <div
-            class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
-          >
-            <div
-              class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
-            ></div>
-            <header
-              class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-              aria-label="2024 to Present"
-            >
-              2015 — 2017
-            </header>
-            <div class="z-10 sm:col-span-6">
-              <h3 class="font-medium leading-snug text-slate-200">
-                <div>
-                  <a
-                    class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                    href="https://www.markerstudy.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="Junior Frontend Web Developer at Markerstudy (opens in a new tab)"
-                    ><span
-                      class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-                    ></span
-                    ><span
-                      >Junior Frontend Web Developer · <!-- -->
-                      <span class="inline-block"
-                        > Markerstudy<svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                          aria-hidden="true"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                            clip-rule="evenodd"
-                          ></path></svg></span></span
-                  ></a>
-                </div>
-              </h3>
-              <p class="mt-2 text-sm leading-normal">
-                I was responsible for building and maintaining Front Ends for insurance websites, working closely with our teams .NET Developers and Project Managers delivering quote and buy websites to tight deadlines.
-              </p>
-              <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    HTML
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    CSS/ SCSS
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    jQuery
-                  </div>
-                </li>
-                <li class="mr-1.5 mt-2">
-                  <div
-                    class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
-                  >
-                    .NET
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
+        <ExperienceComponent
+          v-for="experience in experiences"
+          :key="experience.title"
+          :title="experience.title"
+          :company="experience.company"
+          :date="experience.date"
+          :url="experience.url"
+          :content="experience.content"
+          :skills="experience.skills"
+        ></ExperienceComponent>
       </ol>
       <div class="mt-12">
         <NuxtLink
@@ -196,20 +271,10 @@
           rel="noreferrer noopener"
           aria-label="View Full Résumé (opens in a new tab)"
           ><span
-            >View Current <!-- -->
+            >View Current
+            <!-- -->
             <span class="inline-block"
-              >CV<svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                  clip-rule="evenodd"
-                ></path></svg></span></span
+              >CV<IconsArrow></IconsArrow></span></span
         ></NuxtLink>
       </div>
     </div>

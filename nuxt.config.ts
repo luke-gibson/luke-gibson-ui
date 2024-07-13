@@ -1,10 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   nitro: {
     preset: 'cloudflare-pages'
   },
+
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -20,5 +23,7 @@ export default defineNuxtConfig({
         class: 'bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900',
       },
     }
-  }
+  },
+
+  compatibilityDate: '2024-07-13'
 })

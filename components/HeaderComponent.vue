@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import NavComponent from './NavComponent.vue';
+  
 </script>
 
 <template>
@@ -19,9 +19,22 @@ import NavComponent from './NavComponent.vue';
       </p>
       <NavComponent></NavComponent>
     </div>
-    <div class="ml-1 mt-8 flex items-center">
-      <NuxtLink to="/">SOCIAL MEDIA</NuxtLink>
-      <NuxtLink to="/">SOCIAL MEDIA</NuxtLink>
+    <div class="ml-1 mt-16 flex items-center">
+      <SocialIcon to="https://github.com/luke-gibson">
+        <IconsGitHub></IconsGitHub>
+      </SocialIcon>
+      <SocialIcon to="https://www.behance.net/lukegibson1">
+        <IconsBeHance></IconsBeHance>
+      </SocialIcon>
+      <SocialIcon to="https://codepen.io/luke-gibson">
+        <IconsCodePen></IconsCodePen>
+      </SocialIcon>
+      <SocialIcon to="https://www.instagram.com/lukegibsondesign">
+        <IconsInstagram></IconsInstagram>
+      </SocialIcon>
+      <SocialIcon to="https://www.linkedin.com/in/lukegibson90/">
+        <IconsLinkedIn></IconsLinkedIn>
+      </SocialIcon>
     </div>
   </header>
 </template>
