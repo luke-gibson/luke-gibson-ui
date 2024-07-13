@@ -71,7 +71,7 @@ const skills = [
         When I’m not at my laptop, you’ll find me spending time with my wife, our two children, and our dog, Teddy. I’ve also recently embraced a healthier lifestyle, focusing on fitness and nutrition.
       </p>
     </div>
-    <h3 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200 mt-10 block">MY CORE SKLLSET</h3>            
+    <h3 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-400  mt-10 block">MY CORE SKLLSET</h3>            
     <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">    
       <BadgeComponent v-for="skill in skills">
             {{ skill.name}}
