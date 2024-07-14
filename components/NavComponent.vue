@@ -1,42 +1,7 @@
-<script setup lang="ts"></script>
-
 <template>
   <nav class="mt-16 w-max">
-    <NuxtLink class="group flex items-center py-3" to="/">
-      <span class="nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-      </span>
-      <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-        About
-      </span>
-    </NuxtLink>
-
-    <NuxtLink class="group flex items-center py-3" to="/experience">
-      <span
-        class="nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
-      ></span
-      ><span
-        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-        >Experience</span
-      >
-    </NuxtLink>
-    <NuxtLink class="group flex items-center py-3" to="/projects">
-      <span
-        class="nav-indicator mr-4 h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
-      ></span
-      ><span
-        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-        >Projects</span
-      >
-    </NuxtLink>
+    <NavLink to="/">About</NavLink>
+    <NavLink to="/experience">Experience</NavLink>
+    <NavLink to="/projects">Projects</NavLink>
   </nav>
 </template>
-<style scoped>
-.group.router-link-active .nav-indicator {
-  width: 4rem;
-  background-color: #e2e8f0; /* Same color as group-hover:bg-slate-200 */
-}
-
-.group.router-link-active .nav-text {
-  color: #e2e8f0; /* Same color as group-hover:text-slate-200 */
-}
-</style>
