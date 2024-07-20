@@ -16,10 +16,10 @@
             Let’s grab a coffee and chat!
         </p>
         <div class="mt-8 text-center flex flex-wrap justify-center">
-            <NuxtLink rel="noopener noreferrer" target="_blank" to="https://wa.me/+447513822562" class="rounded-full bg-teal-400/10 hover:bg-teal-400/70 transition duration-300 px-5 py-3 text-xs font-medium leading-5 text-teal-300 hover:text-slate-950 mr-4 mb-4 max-h-[44px;] flex align-middle">
+            <NuxtLink rel="noopener noreferrer" target="_blank" to="https://wa.me/+447513822562" class="rounded-full bg-teal-400/10 hover:bg-teal-400/70 transition duration-300 px-5 py-3 text-xs font-medium leading-5 text-teal-300 hover:text-slate-950 mr-0 sm:mr-4 mb-4 max-h-[44px;] flex align-middle">
                 Send me a WhatsApp <IconsWhatsApp class="ml-2"></IconsWhatsApp>
             </NuxtLink>
-            <NuxtLink to="mailto:hello@lukegibsondesign.co.uk" class="rounded-full bg-teal-400/10 hover:bg-teal-400/70 transition duration-300 px-5 py-3 text-xs font-medium leading-5 text-teal-300 hover:text-slate-950 mr-4 mb-10 max-h-[44px;] flex align-middle">
+            <NuxtLink to="mailto:hello@lukegibsondesign.co.uk" class="rounded-full bg-teal-400/10 hover:bg-teal-400/70 transition duration-300 px-5 py-3 text-xs font-medium leading-5 text-teal-300 hover:text-slate-950 mr-0 mb-10 max-h-[44px;] flex align-middle">
                 Send me an Email <IconsPlane class="ml-2"></IconsPlane>
             </NuxtLink>
         </div>
