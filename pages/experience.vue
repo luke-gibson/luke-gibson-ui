@@ -81,6 +81,9 @@ const experiences = [
       {
         name: "WCAG Accessibility"
       },
+      {
+        name: "Scrum Master"
+      },
     ],
   },
   {
