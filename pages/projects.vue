@@ -72,6 +72,66 @@
         },
       ]
     },
+    {
+      image: "https://res.cloudinary.com/dqqarxqbu/image/upload/v1720559105/placeholder_hf9t8s.jpg",
+      alt: "Upsticks Directory logo",
+      title: "UPSTICKS DIRECTORY",
+      copy: "As a web designer & developer, I’ve turned a training exercise into a robust directory website for estate agents, which I plan to market soon. Using Nuxt 3 on the Front End, this project showcases my technical skills and meets a real need in the estate agency industry. I’m excited about its potential to help estate agents connect with clients and enhance their visibility.",
+      link: "/",
+      tags: [
+        {
+          name: "Nuxt 3/ Vue 3",
+        },
+        {
+          name: "Tailwind",
+        },
+        {
+          name: "Supabase",
+        },
+        {
+          name: "Cloudflare",
+        },
+        {
+          name: "Cloudinary CDN",
+        },
+        {
+          name: "PostgreSQL",
+        },
+        {
+          name: "Pinia",
+        },
+      ]
+    },
+    {
+      image: "https://res.cloudinary.com/dqqarxqbu/image/upload/v1720559105/placeholder_hf9t8s.jpg",
+      alt: "Upsticks Directory logo",
+      title: "UPSTICKS DIRECTORY",
+      copy: "As a web designer & developer, I’ve turned a training exercise into a robust directory website for estate agents, which I plan to market soon. Using Nuxt 3 on the Front End, this project showcases my technical skills and meets a real need in the estate agency industry. I’m excited about its potential to help estate agents connect with clients and enhance their visibility.",
+      link: "/",
+      tags: [
+        {
+          name: "Nuxt 3/ Vue 3",
+        },
+        {
+          name: "Tailwind",
+        },
+        {
+          name: "Supabase",
+        },
+        {
+          name: "Cloudflare",
+        },
+        {
+          name: "Cloudinary CDN",
+        },
+        {
+          name: "PostgreSQL",
+        },
+        {
+          name: "Pinia",
+        },
+      ]
+    },
   ]
 </script>
 
