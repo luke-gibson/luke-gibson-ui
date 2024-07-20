@@ -4,7 +4,7 @@
       image: "https://res.cloudinary.com/dqqarxqbu/image/upload/v1721416168/Luke%20Gibson%20Design/czone_suvy2t.jpg",
       alt: "Czone - Image of a boat sailing",
       title: "CZONE - Navico Group Employee",
-      copy: "As the Project Lead Developer at Navico Group, I built the CZone brand website using Optimizely CMS 12, focusing on SEO and technical performance. I created a user-friendly CMS experience that allows our web managers to quickly build high-quality websites without compromising on technical standards.",
+      copy: "As the Lead Developer on this project at Navico Group, I built the CZone brand website using Optimizely CMS 12, focusing on SEO and technical performance. I created a user-friendly CMS experience that allows our web managers to quickly build high-quality websites without compromising on technical standards.",
       link: "https://czone.navico.com",
       tags: [
         {
@@ -32,7 +32,31 @@
           name: "Freelance Developer",
         },
         {
-          name: "Front End Developer",
+          name: "Umbraco CMS",
+        },
+        {
+          name: "UX/ UI Design",
+        },
+        {
+          name: "Web Hosting/ Support",
+        },
+        {
+          name: "Organic SEO",
+        },
+        {
+          name: "Umbraco Forms",
+        },
+      ]
+    },
+    {
+      image: "https://res.cloudinary.com/dqqarxqbu/image/upload/v1639579119/Luke%20Gibson%20Design/New%20site/agilitaWebP_oqn1jf.webp",
+      alt: "Agilita Workspace - Image of a bespoke piece of office furniture",
+      title: "AGILITA WORKSPACE",
+      copy: "As a freelance web developer and designer, I transformed their website concept into a fully responsive site built on the Umbraco CMS. This involved crafting a user-friendly design and implementing dynamic features, ensuring seamless performance across all devices.",
+      link: "https://agilita.co.uk/",
+      tags: [
+        {
+          name: "Freelance Developer",
         },
         {
           name: "Umbraco CMS",
@@ -42,6 +66,9 @@
         },
         {
           name: "Web Hosting/ Support",
+        },
+        {
+          name: "Organic SEO",
         },
       ]
     },
