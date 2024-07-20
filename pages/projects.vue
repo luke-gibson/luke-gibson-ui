@@ -3,7 +3,7 @@
     {
       image: "https://res.cloudinary.com/dqqarxqbu/image/upload/v1721416168/Luke%20Gibson%20Design/czone_suvy2t.jpg",
       alt: "Czone - Image of a boat sailing",
-      title: "CZONE - Navico Group Employee",
+      title: "CZONE",
       copy: "As the Lead Developer on this project at Navico Group, I built the CZone brand website using Optimizely CMS 12, focusing on SEO and technical performance. I created a user-friendly CMS experience that allows our web managers to quickly build high-quality websites without compromising on technical standards.",
       link: "https://czone.navico.com",
       tags: [
