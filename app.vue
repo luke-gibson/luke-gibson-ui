@@ -16,4 +16,22 @@
   opacity: 0;
   filter: blur(1rem);
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5eead4;
+  border-radius: 20px;
+  transition: all ease .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b9587;
+}
 </style>
