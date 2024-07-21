@@ -6,7 +6,15 @@ export default defineNuxtConfig({
     preset: 'cloudflare-pages'
   },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/tailwindcss", 
+    "@nuxt/image",
+    "@nuxtjs/supabase"
+  ],
+
+  supabase: {
+    redirect: false,
+  },
 
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },

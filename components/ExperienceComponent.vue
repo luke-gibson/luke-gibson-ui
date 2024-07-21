@@ -1,4 +1,7 @@
 <script setup lang="ts">
+  const client = useSupabaseClient();
+  const { data: skills } = await client.from("skill").select("name");
+  
   defineProps({
     title: {
       type: String,
