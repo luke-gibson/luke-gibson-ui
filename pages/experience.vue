@@ -24,7 +24,7 @@
       }
 
       if (data) {
-        experiences.value = data;
+        experiences.value = data.sort((a, b) => b.id - a.id);
       }
     } catch (err) {
       console.error('Error fetching experiences:', err);
