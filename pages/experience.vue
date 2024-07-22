@@ -1,6 +1,41 @@
 <script setup lang="ts">
+
+  interface Experience {
+    id: number;
+    title: string;
+    company: string;
+    date: string;
+    url: string;
+    content: string;
+  }
+
+  const experiences = ref<Experience[]>([]);
+  const isLoading = ref<boolean>(true);
   const client = useSupabaseClient();
-  const { data: experiences } = await client.from("experience").select("title, company, date, url, content");
+
+  const fetchExperiences = async () => {
+    try {
+      const { data, error } = await client
+        .from<Experience>('experience')
+        .select('id, title, company, date, url, content');
+
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      if (data) {
+        experiences.value = data;
+      }
+    } catch (err) {
+      console.error('Error fetching experiences:', err);
+    } finally {
+      isLoading.value = false; 
+    }
+  };
+
+  onMounted(() => {
+    fetchExperiences();
+  });
 </script>
 
 <template>
@@ -9,26 +44,22 @@
       Experience
     </MobileTitle>
     <div>
-      <ol class="group/list">
+      <div v-if="isLoading" class="text-center text-gray-500">
+        <div class="flex justify-center items-start">
+          <div class="rounded-full h-10 w-10 bg-teal-300/50 animate-ping"></div>
+        </div>
+      </div>
+      <ol v-else class="group/list">
         <ExperienceComponent
           v-for="experience in experiences"
-          :key="experience.title"
+          :id="experience.id"
+          :key="experience.id"
           :title="experience.title"
           :company="experience.company"
           :date="experience.date"
           :url="experience.url"
           :content="experience.content"
         ></ExperienceComponent>
-        <!-- <ExperienceComponent
-          v-for="experience in experiences"
-          :key="experience.title"
-          :title="experience.title"
-          :company="experience.company"
-          :date="experience.date"
-          :url="experience.url"
-          :content="experience.content"
-          :skills="experience.skills"
-        ></ExperienceComponent> -->
       </ol>
       <div class="mt-12">
         <NuxtLink
