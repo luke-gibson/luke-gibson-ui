@@ -1,30 +1,62 @@
 <script setup lang="ts">
-  defineProps({
-    title: {
-      type: String,
-      required: true,
-    },
-    company: {
-      type: String,
-      required: true,
-    },
-    date: {
-      type: String,
-      required: true,
-    },
-    url : {
-      type: String,
-      required: true,
-    },
-    content: {
-      type: String,
-      required: true
-    },
-    skills: {
-      type: Array,
-      required: true
+interface Props {
+  id: number;
+  title: string;
+  company: string;
+  date: string;
+  url: string;
+  content: string;
+}
+
+interface Skill {
+  id: number;
+  name: string;
+}
+
+interface JobSkill {
+  id: number;
+  skill: Skill;
+}
+
+interface ExperienceData {
+  id: number;
+  jobSkill: JobSkill[];
+}
+
+const props = defineProps<Props>();
+const client = useSupabaseClient();
+const skills = ref<string[]>([]);
+
+const fetchSkills = async (experienceId: number): Promise<string[]> => {
+  try {
+    const { data, error } = await client
+      .from<ExperienceData>('experience')
+      .select(`
+        id,
+        jobSkill (
+          id,
+          skill (
+            id,
+            name
+          )
+        )
+      `)
+      .eq('id', experienceId);
+
+    if (error) {
+      throw new Error(error.message);
     }
-  });
+
+    return data?.[0]?.jobSkill.map(js => js.skill.name) || [];
+  } catch (err) {
+    console.error('Error fetching skills:', err);
+    return [];
+  }
+};
+
+onMounted(async () => {
+  skills.value = await fetchSkills(props.id);
+});
 </script>
 
 <template>
@@ -58,8 +90,8 @@
         <ul class="mt-2 flex flex-wrap" aria-label="Technologies used" v-if="skills.length">            
             <BadgeComponent 
                 v-for="skill in skills" 
-                :key="skill.name">
-                  {{ skill.name }}
+                :key="skill">
+                  {{ skill }}
             </BadgeComponent> 
         </ul>
       </div>
