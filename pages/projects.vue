@@ -42,7 +42,11 @@
     <MobileTitle>
       Projects
     </MobileTitle>
-    <div>
+    <div v-if="isLoading" class="text-center text-gray-500">
+      <div class="flex justify-center items-start">
+          <div class="rounded-full h-10 w-10 bg-teal-300/50 animate-ping"></div>
+        </div>
+      </div>
       <ul class="group/list">
         <ProjectComponent 
           v-for="project in projects"
@@ -54,6 +58,5 @@
           :link="project.link"
           ></ProjectComponent>
       </ul>
-    </div>
   </section>
 </template>
