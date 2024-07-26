@@ -1,0 +1,2 @@
+const a=".page-enter-active,.page-leave-active{transition:all .4s}.page-enter-from,.page-leave-to{filter:blur(1rem);opacity:0}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#5eead4;border-radius:20px;-webkit-transition:all .3s ease;transition:all .3s ease}::-webkit-scrollbar-thumb:hover{background:#3b9587}";export{a};
+//# sourceMappingURL=entry-styles-2.mjs-Bmme_1CI.mjs.map
