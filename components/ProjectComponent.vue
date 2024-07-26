@@ -1,30 +1,60 @@
 <script setup lang="ts">
-  defineProps({
-    title: {
-      type: String,
-      required: true,
-    },
-    copy: {
-      type: String,
-      required: true,
-    },
-    link: {
-      type: String,
-      required: true,
-    },
-    image : {
-      type: String,
-      required: true,
-    },
-    alt: {
-      type: String,
-      required: true,
-    },
-    tags: {
-      type: Array,
-      required: true
+  interface Props {
+  id: number;
+  image: string;
+  alt: string;
+  title: string;
+  copy: string;
+  link: string;
+}
+
+interface Skill {
+  id: number;
+  name: string;
+}
+
+interface ProjectSkill {
+  id: number;
+  skill: Skill;
+}
+
+interface ProjectData {
+  id: number;
+  projectSkill: ProjectSkill[];
+}
+
+const props = defineProps<Props>();
+const client = useSupabaseClient();
+const skills = ref<string[]>([]);
+
+const fetchSkills = async (projectId: number): Promise<string[]> => {
+  try {
+    const { data, error } = await client
+      .from<ProjectData>('project')
+      .select(`
+        id,
+        projectSkill (
+          skill (
+            name
+          )
+        )
+      `)
+      .eq('id', projectId);
+
+    if (error) {
+      throw new Error(error.message);
     }
-  });
+
+    return data?.[0]?.projectSkill.map(js => js.skill.name) || [];
+  } catch (err) {
+    console.error('Error fetching skills:', err);
+    return [];
+  }
+};
+
+onMounted(async () => {
+  skills.value = await fetchSkills(props.id);
+});
 </script>
 
 <template>
@@ -48,11 +78,11 @@
         <p class="mt-2 text-sm leading-normal">
           {{ copy }}
         </p>
-        <ul class="mt-2 flex flex-wrap" aria-label="Technologies used" v-if="tags.length">      
+        <ul class="mt-2 flex flex-wrap" aria-label="Technologies used" v-if="skills.length">      
         <BadgeComponent
-          v-for="tag in tags" 
-          :key="tag.name">
-          {{ tag.name }} 
+          v-for="skill in skills" 
+          :key="skill">
+          {{ skill }} 
           </BadgeComponent>
         </ul>
       </div>
