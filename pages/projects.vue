@@ -1,5 +1,5 @@
 <script setup lang="ts">
-   interface Project {
+  interface Project {
     id: number;
     image: string;
     alt: string;
