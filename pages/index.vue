@@ -4,19 +4,43 @@ const skills = [
     name: 'HTML5',
   },
   {
-    name: 'CSS/ SCSS',
+    name: 'CSS',
   },
   {
-    name: 'JavaScript ES6',
+    name: 'SCSS'
+  },
+  {
+    name: 'JavaScript',
+  },
+  {
+    name: 'TypeScript',
+  },
+  {
+    name: 'React',
+  },
+  {
+    name: 'Next JS',
   },
   {
     name: 'Vue 3',
   },
   {
-    name: 'Nuxt 3',
+    name: 'Nuxt JS',
   },
   {
-    name: 'Webpack/ Vite',
+    name: 'Jest'
+  },
+  {
+    name: 'Docker'
+  },
+  {
+    name: 'Webpack',
+  },
+  {
+    name: 'Vite'
+  },
+  {
+    name: 'Strapi CMS'
   },
   {
     name: 'Umbraco CMS',
@@ -43,7 +67,25 @@ const skills = [
     name: 'UI/UX Design',
   },
   {
-    name: 'DevOps/ Jira',
+    name: 'Figma'
+  },
+  {
+    name: 'Adobe CC'
+  },
+  {
+    name: 'Affinity'
+  },
+  {
+    name: 'DevOps',
+  },
+  {
+    name: 'Jira'
+  },
+  {
+    name: 'Trello'
+  },
+  {
+    name: 'Monday'
   },
 ]
 </script>
