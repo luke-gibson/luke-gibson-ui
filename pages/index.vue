@@ -20,7 +20,7 @@ const skills = [
   },
   {
     name: 'Next JS',
-  },
+  }, 
   {
     name: 'Vue 3',
   },
@@ -97,13 +97,16 @@ const skills = [
     </MobileTitle>
     <div>
       <p class="mb-4">
-        Back in 2015, I was working as an Estate Agent when the agency I was with decided to rebrand. They needed a new logo, website, and email signatures. I’ve always been passionate about design, so I jumped at the chance to create the email signatures myself. After a bit of research, I opened Sublime Text and started writing HTML and CSS for the first time. I was hooked within hours.
+        Back in 2015, my journey into web design and development started unexpectedly while working as an Estate Agent. When my agency decided to rebrand, they needed a new logo, website, and email signatures. Always passionate about design, I eagerly took on the challenge of creating the email signatures myself. After researching best practices, I opened Sublime Text and started writing HTML and CSS for the first time. Within hours, I was hooked, and what started as a small task quickly turned into a deep fascination with web development.
       </p>
       <p class="mb-4">
-        Today, I focus on creating accessible user interfaces for my employer and various freelance projects. I love working in that perfect sweet spot between design and development, creating websites that not only look great and are user-friendly but are also well-built and easy to maintain.
+        Since then, I’ve honed my skills, specialising in building accessible, user-friendly, and visually engaging websites. As a web designer and developer based in Hampshire, I focus on creating seamless user experiences, ensuring that every site I build is not only beautifully designed but also well-structured, responsive, and easy to maintain. Whether working on freelance projects or for my employer, I love that perfect balance between creativity and functionality, bringing ideas to life through intuitive web design and clean, efficient code.
+      </p>
+      <p class="mb-4">
+        With years of experience in front-end and back-end development, I’ve worked with technologies such as HTML, CSS, JavaScript, and content management systems like Strapi, Umbraco, and Optimizely. My goal is to build websites that not only look great but also perform exceptionally well in terms of speed, accessibility, and SEO.
       </p>
       <p>
-        When I’m not at my laptop, you’ll find me spending time with my wife, our two children, and our dog, Teddy. I’ve also recently embraced a healthier lifestyle, focusing on fitness and nutrition.
+        If you’re looking for a web designer and developer in Hampshire to create a bespoke website, refresh your existing site, or provide ongoing web support, I’d love to help bring your vision to life.
       </p>
     </div>
     <h3 class="nav-text text-xs font-bold uppercase tracking-widest text-slate-400  mt-10 block">MY CORE SKLLSET</h3>            
