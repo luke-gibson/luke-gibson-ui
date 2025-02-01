@@ -29,7 +29,8 @@ export default defineNuxtConfig({
         { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com'},
         { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap', media:"print", onload:"this.onload=null;this.removeAttribute('media');", fetchpriority:"high"},
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/favicon.ico' }
       ],
       meta: [
         { name: 'description', content: 'I create pixel-perfect, responsive, dynamic, seo friendly, engaging and accessible digital products.' }
