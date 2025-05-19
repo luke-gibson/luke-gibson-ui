@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import GitHub from '~/components/Icons/GitHub.vue';
+
 const skills = [
   {
     name: 'HTML5',
@@ -21,6 +23,9 @@ const skills = [
   {
     name: 'Next JS',
   }, 
+  {
+    name: 'Redux Toolkit',
+  },
   {
     name: 'Vue 3',
   },
@@ -77,6 +82,15 @@ const skills = [
   },
   {
     name: 'DevOps',
+  },
+  {
+    name: 'GitHub'
+  },
+  {
+    name: 'Render'
+  },
+  {
+    name: 'Vercel'
   },
   {
     name: 'Jira'
